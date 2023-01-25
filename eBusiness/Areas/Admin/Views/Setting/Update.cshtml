@@ -1,0 +1,21 @@
+﻿@model Setting
+
+
+<div class="container">
+
+    <div class="container">
+        <h1 style="text-align:center">Update Setting</h1>
+    </div>
+    <div>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group col-4">
+                <label asp-for="@Model.Value">@Model.Key</label>
+                <input asp-for="@Model.Value" class="form-control" placeholder="@Model.Key">
+                <span asp-validation-for="@Model.Value" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,30 @@
+﻿@model Position
+
+<div class="container">
+
+    <div class="container">
+        <h1 style="text-align:center">Create Positions</h1>
+    </div>
+    <div>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+
+
+                <div class="form-group col-4">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+
+
+    </div>
+</div>
+
+
+
